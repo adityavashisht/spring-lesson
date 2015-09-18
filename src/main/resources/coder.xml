@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="javaCoder" class="org.indasil.learningjava.spring.intro.software.JavaCoder"/>
+    <bean id="phpCoder" class="org.indasil.learningjava.spring.intro.software.PhpCoder"/>
+
+
+    <bean id="development" class="org.indasil.learningjava.spring.intro.software.Development">
+
+        <property name="coder" ref="phpCoder"/>
+        <property name="coderTwo" ref="javaCoder"/>
+     </bean>
+
+
+</beans>

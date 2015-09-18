@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="contractor" class="org.indasil.learningjava.spring.intro.simple.Contractor"/>
+
+    <bean id="employee" class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+
+    <bean id="manager" class="org.indasil.learningjava.spring.intro.simple.Manager">
+        <property name="contractor" ref="contractor"/>
+        <property name="employee" ref="employee"/>
+        <property name="employeeList">
+            <list>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+                <bean class="org.indasil.learningjava.spring.intro.simple.Employee"/>
+
+            </list>
+        </property>
+    </bean>
+
+
+
+
+</beans>
