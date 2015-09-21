@@ -3,13 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="orderService" class="org.indasil.learningjava.spring.intro.order.singleton.OrderService" init-method="moreStuff"/>
+    <bean id="packageService" class="org.indasil.learningjava.spring.intro.order.singleton.PackageService"/>
 
-    <import resource="coder-constructor-java.xml"/>
-    <import resource="coder-constructor-php.xml"/>
 
-    <bean id="development" class="org.indasil.learningjava.spring.intro.tech.Development">
-        <constructor-arg ref="javaCoder"/>
-    </bean>
 
 
 </beans>

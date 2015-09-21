@@ -9,4 +9,8 @@ public class JavaCoder implements Coder {
     public void writeCode() {
         System.out.println("Java Code");
     }
+
+    public void shutdown() {
+        System.out.println("I am shutting down");
+    }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="order" class="org.indasil.learningjava.spring.intro.order.prototype.Order" scope="prototype">
+        <property name="orderService">
+            <bean class="org.indasil.learningjava.spring.intro.order.prototype.OrderService"/>
+        </property>
+        <property name="packageService">
+            <bean class="org.indasil.learningjava.spring.intro.order.prototype.PackageService"/>
+        </property>
+    </bean>
+
+</beans>

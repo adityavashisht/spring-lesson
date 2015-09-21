@@ -12,6 +12,8 @@ public class BeanWiring {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext(new String[]{"/coder-constructor.xml"});
 
+
+
         Development development = (Development) context.getBean("development");
 
         development.start();
